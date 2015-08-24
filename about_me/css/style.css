@@ -1,0 +1,118 @@
+header
+{
+	color: white;
+	font-size: xx-large;
+	font-family:  Helvetica Neue;
+	text-shadow: 3px 1px 0 #b09811,
+          -1px -1px #b09811,
+           1px -1px #b09811,
+          -1px 1px #b09811,
+           0 1px #b09811,
+           1px 0 #b09811,
+          -1px 0 #b09811,
+           0 -1px #b09811;
+
+	background-image: url(../img/cabecera.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	padding: 30px;
+	margin: auto;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 6px double #b09811;
+	width: 82%;
+}
+hr
+{
+	border : 1px solid gray;
+	width: 87%;
+}
+body{
+	
+	background: rgba(76,76,76,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,0.99) 12%, rgba(102,102,102,0.97) 25%, rgba(71,71,71,0.96) 39%, rgba(44,44,44,0.95) 50%, rgba(0,0,0,0.94) 51%, rgba(17,17,17,0.93) 60%, rgba(43,43,43,0.92) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.89) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,0.99)), color-stop(25%, rgba(102,102,102,0.97)), color-stop(39%, rgba(71,71,71,0.96)), color-stop(50%, rgba(44,44,44,0.95)), color-stop(51%, rgba(0,0,0,0.94)), color-stop(60%, rgba(17,17,17,0.93)), color-stop(76%, rgba(43,43,43,0.92)), color-stop(91%, rgba(28,28,28,0.9)), color-stop(100%, rgba(19,19,19,0.89)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,0.99) 12%, rgba(102,102,102,0.97) 25%, rgba(71,71,71,0.96) 39%, rgba(44,44,44,0.95) 50%, rgba(0,0,0,0.94) 51%, rgba(17,17,17,0.93) 60%, rgba(43,43,43,0.92) 76%, rgba(28,28,28,0.9) 91%, rgba(19,19,19,0.89) 100%);
+	
+}
+#imagen{
+    background-image: url(../img/fondo.png);
+	background-repeat: no-repeat;
+    background-position: top;
+}
+#texto{
+	margin-left: 50%;
+    margin-right: 10%;
+    padding: 30px;
+    font-family:  Helvetica Neue;
+    text-align: justify;
+    margin-bottom: 5px;
+    background-color: rgba(250,250,250,0.6);
+}
+#redes{
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    font-family:  Helvetica Neue;
+    text-align: justify;
+    margin-bottom: 5px;
+    background-color: rgba(150,150,150,0.8);
+	height:70px;
+	padding:0;
+	position:relative;
+}
+li {
+	margin:0 0 1px 41px;
+	height:57px;
+	width:57px;
+	list-style:none;
+	float:left;
+	padding:0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out; 
+	transition: all 0.4s ease-in-out;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 1px solid black;
+	-webkit-box-shadow: 8px 10px 4px 4px rgba(0,0,0,0.64);
+	-moz-box-shadow: 8px 10px 4px 4px rgba(0,0,0,0.64);
+	box-shadow: 8px 10px 4px 4px rgba(0,0,0,0.64);
+}
+li a {
+	float:left;
+	width:57px;
+	line-height:24px;
+	display: block;
+	text-indent: -99999px;
+	margin:0px;
+	outline: none;
+	padding:0;
+	min-height:57px;
+	height:100%;
+	text-decoration:none;
+}
+.botones {
+	position:relative;
+	margin-left:15%;
+	margin-right:5%;
+	padding:9px;
+}
+.botones .iconfacebook{background: #E6E6E6 url(../img/social-icons/icon-facebook.png) top left no-repeat;}
+.botones .icontwitter{background: #D8D8D8 url(../img/social-icons/icon-twitter.png) top left no-repeat;}
+.botones .iconrssmail{background: #F1F1F1 url(../img/social-icons/icon-mail.png) top left no-repeat;}
+.botones .icongithub{background: #D8D8D8 url(../img/social-icons/icon-github.png) top left no-repeat;}
+.botones .icontelefono{background: #F1F1F1 url(../img/social-icons/icon-telefono.png) top left no-repeat;}
+.botones .iconfacebook:hover{background-position:center -57px; background-color: #37589b;}
+.botones .icontwitter:hover {background-position:center -57px; background-color: #46d4fe;}
+.botones .iconrssmail:hover{background-position:center -57px; background-color: #FFB000;}
+.botones .icongithub:hover{background-position:center -57px; background-color: #000000;}
+.botones .icontelefono:hover {background-position:center -57px; background-color: #8bd982; width:175px;}
+.botones li:hover a{background: transparent url(../img/social-icons/icon-social-reflect.png) no-repeat;
+}
