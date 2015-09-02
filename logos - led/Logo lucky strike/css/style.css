@@ -1,0 +1,70 @@
+body 
+{
+	background: #92bee8;
+	background: linear-gradient(135deg, #92bee8 37%,#207ce5 70%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92bee8', endColorstr='#207ce5',GradientType=1 );
+}
+header 
+{
+	background: #34495e;
+	border: 1px solid white;
+	border-radius: 13px;
+	box-shadow: 13px 11px 4px 2px rgba(0,0,0,0.4);
+	box-sizing: content-box;
+	color: white;
+	font: normal 15px "Times New Roman", Monaco, monospace;
+	margin: 0px auto;
+	margin-top: 90px;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-shadow: 0 0 9px rgba(0,0,255,1);
+	width: 570px;
+}
+h2 
+{
+	font: 88px 'Open Sans', sans-serif;
+	font-weight: bolder;
+	line-height: 80px;
+	margin-left: -51px;
+	margin-top: 18px;
+	position: absolute;
+	text-align: right;
+	transform: scaleY(0.7) scaleX(0.5);
+}
+h5 
+{
+	font: 16px Calibri;
+	margin-top: 156px;
+	text-align: center;
+}
+.caja 
+{
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 15px black;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 40px;
+	width: 570px;
+}
+#contorno
+{
+	background-color: #9DA274;
+	border: solid #231F20 6px;
+	border-radius: 50%;
+	height: 270px;
+	margin: 10px;
+	margin-left: 140px;
+	width: 270px;
+}
+#centro 
+{
+	background-color: #D62132;
+	border-radius: 50%;
+	border: solid white 16px;
+	color: #231F20;
+	height: 200px;
+	line-height: 150px;
+	margin: 20px;
+	width: 200px;
+}
