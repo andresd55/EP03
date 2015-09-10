@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Area Circulo</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div>EJERCICIOS BASICOS DE JAVASCRIPT</div>
+	</header>
+	<!--///////PRIMERO-->
+	<fieldset>
+	    <legend>
+	        <h2>CONVERSION GALONES - LITROS</h2>
+	    </legend>
+		<div>
+			<h5>
+			Numero de galones: <input type="number" step="any" id="galones">
+			<button onclick="conversionGalones()">Litros</button>
+			</h5>
+		</div>
+	</fieldset>
+	<!--///////SEGUNDO-->
+	<fieldset>
+	    <legend>
+	        <h2>CONVERSION DE GRADOS</h2>
+	    </legend>
+	    <fieldset class="fieldset" id="field1">
+	    	<legend>
+		        <h4>Centigrados - Fahrenheit</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados centigrados: <input type="number" step="any" id="centigradosF"> 
+				<button onclick="centigradosFahrenheit()">Convertir</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field2">
+	    	<legend>
+		        <h4>Centigrados - Kelvin</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados centigrados: <input type="number" step="any" id="centigradosK"> 
+				<button onclick="centigradosKelvin()">Convertir</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field3">
+	    	<legend>
+		        <h4>Fahrenheit - Centigrados</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados fahrenheit: <input type="number" step="any" id="fahrenheitC"> 
+				<button onclick="fahrenheitCentigrados()">Convertir</button>	
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field1">
+	    	<legend>
+		        <h4>Fahrenheit - Kelvin</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados fahrenheit: <input type="number" step="any" id="fahrenheitK"> 
+				<button onclick="fahrenheitKelvin()">Convertir</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field2">
+	    	<legend>
+		        <h4>Kelvin - Fahrenheit</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados kelvin: <input type="number" step="any" id="kelvinF"> 
+				<button onclick="KelvinFahrenheit()">Convertir</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field3">
+	    	<legend>
+		        <h4>Kelvin - Centigrados</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Grados kelvin: <input type="number" step="any" id="kelvinC"> 
+				<button onclick="KelvinCentigrados()">Convertir</button>
+				</h5>
+			</div>
+		</fieldset>
+	</fieldset>
+	<!--///////TERCERO-->
+	<fieldset>
+	    <legend>
+	        <h2>PESO EFECTIVO EN LA LUNA</h2>
+	    </legend>
+		<div>
+			<h5>
+			Peso (Kg): <input type="number" step="any" id="peso">
+			<button onclick="pesoLuna()">Peso luna</button>
+			</h5>
+		</div>
+	</fieldset>
+	<!--///////CUARTO-->
+	<fieldset>
+	    <legend>
+	        <h2>AREA DE FIGURAS GEOMETRICAS</h2>
+	    </legend>
+	    <fieldset class="fieldset" id="field1">
+	    	<legend>
+		        <h4>Area de circulo</h4>
+		    </legend>
+			<div>
+			    <h5>
+				Radio: <input type="number" step="any" id="radio"> 
+				<button onclick="areaCirculo()">Circulo</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field2">
+	    	<legend>
+		        <h4>Area de triangulo</h4>	
+		    </legend>
+			<div>
+			    <h5>
+				Base: <input type="number" step="any" id="base"> 
+				Altura: <input type="number" step="any" id="altura"> 
+				<button onclick="areaTriangulo()">Triangulo</button>
+				</h5>
+			</div>
+		</fieldset>
+		<fieldset class="fieldset" id="field3">
+	    	<legend>
+		        <h4>Area de cuadrado</h4>
+		    </legend>
+			<div>
+			    <h5>
+				longitud de lado: <input type="number" step="any" id="lado"> 
+				<button onclick="areaCuadrado()">Cuadrado</button>	
+				</h5>
+			</div>
+		</fieldset>
+	</fieldset>
+	<!--///////QUINTO-->
+	<fieldset>
+	    <legend>
+	        <h2>CANTIDAD DE VOCALES</h2>
+	    </legend>
+		<div>
+			<h5>
+			Palabra: <input type="text" step="any" id="palabra">
+			<button onclick="cantidadVocales2()" id="vocales">cantidad vocales</button>
+			</h5>
+		</div>
+	</fieldset>
+</body>
+</html>

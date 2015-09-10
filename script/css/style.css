@@ -1,0 +1,51 @@
+body{
+	background-color: beige;
+}
+button{
+	width: 90px;
+}
+input{
+	width: 40px;
+}
+header{
+	text-shadow:2px 2px 1px red;
+	font-weight:bold;
+	color:#000000;
+	background-color: burlywood;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px black;
+	letter-spacing:1pt;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	word-spacing:2pt;
+	font-size:40px;
+	text-align:center;
+	font-family:courier new, courier, monospace;
+	line-height:1;
+	width: 80%;
+}
+.fieldset{
+	width: 30%;
+	position: absolute;
+}
+#field1{
+	position: relative;
+	margin-top: -20px;
+}
+#field2{
+	position: absolute;
+	margin-left: 32%;
+	margin-top: -150px;
+}
+#field3{
+	position: absolute;
+	margin-left: 65%;
+	margin-top: -150px;
+}
+#vocales{
+	width: 180px;
+}
+#palabra{
+	width: 180px;
+}
