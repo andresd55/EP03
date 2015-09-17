@@ -1,0 +1,55 @@
+body
+{
+	background: linear-gradient(135deg, rgba(202,218,226,1) 0%, rgba(182,199,210,1) 37%, rgba(152,176,189,1) 51%, rgba(178,215,240,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cadae2', endColorstr='#b2d7f0', GradientType=1 );
+	margin-top: 15px;
+	font-family: times new roman;
+}
+header 
+{
+	background-color: white;
+	border-radius: 11px;
+	box-shadow: -3px 20px 24px 0px rgba(0,0,0,0.75);
+	font: normal 40px "", Monaco, monospace;
+	margin: 0px auto;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-shadow: 2px 2px 4px #A3C1D4;
+	width: 570px;
+ }
+input{
+	width: 60px;
+}
+#operacion{
+	margin: 0 auto;
+	width: 270px;
+	padding: 40px;
+	background-color: rgba(250,250,250,0.4);
+}	
+#num1{
+	margin-left: 19px;
+}
+#num2{
+	margin-left: 59px;
+}
+#den1{
+	margin-left: 19px;
+	position: absolute;
+	margin-top: -8px;
+}
+#den2{
+	position: absolute;
+	margin-left: 148px;
+	margin-top: -8px;
+}
+#operadores{
+	margin-left: 99px;
+	margin-top: -10px;
+}
+#boton{
+	margin-top: -22px;
+	margin-left: 225px;
+}

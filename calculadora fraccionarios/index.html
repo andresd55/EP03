@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de fraccionarios</title>
+	<link rel ="stylesheet" type="text/css" href = "css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<script src = "js/script.js"></script>
+	<script src = "js/biginteger.js"></script>
+</head>
+<body>
+	</div>
+	<h1>
+		<header>
+			Calculadora de fraccionarios
+		</header>
+	</h1>
+	<div id="operacion">
+		<div id="numeradores">
+			<input type="number" id="num1" required>
+			<input type="number" id="num2" required>
+		</div>
+		<div id="operadores">
+			<select id="operador" >
+					<option  value="+">+</option>
+					<option  value="-">-</option>
+					<option  value="*">*</option>
+					<option  value="/">/</option>
+			</select>
+		</div>
+		<div id="denominadores">	
+			<input type="number" id="den1" required>
+			<input type="number" id="den2" required>
+		</div>
+		<div id="boton">
+			<button onclick="opera()">=</button>
+		</div>
+	</div>
+</body>
+</html>
