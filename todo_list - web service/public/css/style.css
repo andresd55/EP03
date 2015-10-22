@@ -1,0 +1,135 @@
+body
+{
+	background : url("../img/fondo.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+img
+{
+	cursor: pointer;
+	margin-top: -0px;
+}
+.tabla
+{
+	margin: 0 auto;
+	margin-top: 5px;
+	width: 41%;
+	border-radius: 20px;
+	background:#FFFFFF;
+	 padding:10px;
+	 text-align:left;
+	 vertical-align:middle;
+	 font-size:20px;
+	 font-weight: bolder;
+}
+table{
+	width: 100%;
+}
+header 
+{
+	background-color: rgba(1,1,1,0.7);
+	border-radius: 15px;
+	box-shadow: 1px 0px 8px 5px #fff;
+	font: normal 40px "", Monaco, monospace;
+	color: #f4f4f4; 
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding:20px;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-shadow: 3px 3px 4px rgb(1,200,1);
+	width: 40%;
+ }
+input[type="button"] {	
+ border: 0;
+ width: 95%;
+ height: 40px;
+ border-radius: 3px;
+ font-size: 1.0em;
+ cursor: pointer;
+	
+ 
+background-size: cover;
+}
+input[type="button"]:hover {
+ background-color: #16aa56;
+ animation-name: shake;
+}
+::-webkit-input-placeholder {
+ color: #C3C3C4;
+ font-size: 15px;
+}
+#textbox{
+	padding: 10px;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #435160;
+	outline: none;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: bolder;
+	width: 80%;
+	height: 40px;
+	margin-left: 15px;
+	color: #000;
+}
+
+.tarea{
+	border-top: 1px solid #C1C3D1;
+ border-bottom-: 1px solid #C1C3D1;
+ border-right: 1px solid #C1C3D1;
+}
+.tarea:hover{
+ background:#2AFF69;
+ color:#FFFFFF;
+ border-top: 1px solid #22262e;
+ border-bottom: 1px solid #22262e;
+}
+#guarda{
+	background:url("../img/nueva.png") no-repeat;
+	background-color: #26FB4E;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 30px;
+	height: 30px;
+}
+#desactiva{
+	color:#C3C3C4;
+}
+#activa{
+	color:#000;
+}
+#buscar{
+	position: absolute;
+	margin-left: 23px;
+	width: 30px;
+	height: 30px;
+	background:url("../img/buscar.jpg") no-repeat;
+	background-color: #26FB4E;
+}
+#busca{
+	padding: 10px;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #435160;
+	outline: none;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: bolder;
+	width: 80%;
+	height: 25px;
+	margin-left: 15px;
+	color: #000;
+}
+#imprime{
+	background:#FFFFFF;
+	padding:10px;
+	text-align:left;
+	vertical-align:middle;
+	font-size:20px;
+	font-weight: bolder;
+}
+#paginador{
+	border-radius: 10px;
+}
