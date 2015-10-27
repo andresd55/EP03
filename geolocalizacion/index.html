@@ -537,8 +537,7 @@
 		
 		navigator.geolocation.getCurrentPosition(localizacion2);
 
-		puntos.push(coordenadas.Lat);
-		puntos.push(coordenadas.Lng);
+		
 		//alert("las coordenadas son latitud = :" +coordenadas.Lat +" Longitud = "+coordenadas.Lng);
 
 		$("#latitude").html(coordenadas.Lat);
@@ -547,8 +546,8 @@
 
         zone = LatLonToUTMXY (DegToRad (coordenadas.Lat), DegToRad (coordenadas.Lng), zone, xy);
 
-        alert(xy[0]);
-        alert(xy[1]);
+		puntos.push(xy[0]);
+		puntos.push(xy[1]);
 
 
 	}
@@ -563,8 +562,18 @@
 		}
 		nom_div("imprime").innerHTML = txt;
 
+	}
+	function boton3()
+	{
+		var r1=0;
+		var r2=0;
+		var area = 0;
 
+		r1 = ( (puntos[0] * puntos[3]) + (puntos[2] * puntos[5]) + (puntos[4] * puntos[7]) + (puntos[6] * puntos[9]) + (puntos[8] * puntos[1]));
+		r2 = ( (puntos[1] * puntos[2]) + (puntos[3] * puntos[4]) + (puntos[5] * puntos[6]) + (puntos[7] * puntos[8]) + (puntos[9] * puntos[0]));
 
+		area = (r1 - r2)/2;
+		alert("el area es: " + area);
 	}
 	function nom_div(div)
 	{
@@ -581,8 +590,9 @@
 		<h2>Tu posición actual es:</h2>
 		<h3>Latitud: <span id="latitude"></span></h3>
 		<h3>Longitud: <span id="longitude"></span></h3>
-		<input type="submit" value="Ver" name="ver" id="boton" onclick="boton()" />
-		<input type="submit" value="calcular area" name="calcular area" id="boton" onclick="boton2()" />
+		<input type="submit" value="tomar punto" name="ver" id="boton" onclick="boton()" />
+		<input type="submit" value="ver puntos" name="ver puntos" id="boton" onclick="boton2()" />
+		<input type="submit" value="calcular area" name="calcular area" id="boton" onclick="boton3()" />
 		<div id = "imprime"></div>
 	</div>
 	<div id="mapa"></div>
