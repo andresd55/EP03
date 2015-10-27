@@ -63,8 +63,19 @@
 		}
 		
 	}
+	function localizacion (posicion) {
+		coordenadas = {
+			Lat: posicion.coords.latitude,
+			Lng: posicion.coords.longitude
+		}
+		
+		informacion(coordenadas);
+
+	}
 	function boton()
 	{
+		navigator.geolocation.getCurrentPosition(localizacion);
+
 		puntos.push(coordenadas.Lat);
 		puntos.push(coordenadas.Lng);
 		alert("las coordenadas son latitud = :" +coordenadas.Lat +" Longitud = "+coordenadas.Lng);
