@@ -14,9 +14,8 @@
 	body { background-image: url(images/old_map.png); font-size: 16px; font-family: 'Marcellus', serif; height: 100%; position: relative; }
 	header { background-color: rgba(0,0,0,.88); height: 80px; width: 100%; position: fixed; z-index: 99; box-shadow: 0px 2px 3px #333333; }
 	header > h1 { color: #FFFFFF; font-family: 'Marcellus', serif; font-size: 1.2em; font-weight: normal; margin: 30px 60px; }
-	
-	#mapa { position: absolute; background: transparent; height: 100%; width: 100%; top: 0; left: 0; right: 0; bottom: 0; }
-	#informacion { position: absolute; background: rgba(0,16,27,.85); z-index: 200; top: 70%; width: 30%; padding: 12px; }
+
+	#informacion { position: absolute; background: rgba(0,16,27,.85); z-index: 200; top: 30%; width: 30%; padding: 12px; ,margin: 0 auto; left: 40%;}
 	
 	#informacion h2,
 	#informacion h3 { color: #FFFFFF; text-shadow: 1px 1px 1px #000000; font-weight: normal; font-size: .9em; }
@@ -32,10 +31,11 @@
 		$("#latitude").html(coordenadas.Lat);
 		$("#longitude").html(coordenadas.Lng);
 	}
-	
+	var puntos = [];
+	var coordenadas;
 	function iniciar() {
 		
-		var coordenadas = {
+		coordenadas = {
 			Lat: 0,
 			Lng: 0
 		};
@@ -47,21 +47,9 @@
 			}
 			
 			informacion(coordenadas);
+
 			
-			var mapOptions = {
-				zoom: 16,
-				center: new google.maps.LatLng(coordenadas.Lat, coordenadas.Lng),
-				disableDefaultUI: true,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			
-			var map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
-			
-			var infowindow = new google.maps.InfoWindow({
-				map: map,
-				position: new google.maps.LatLng(coordenadas.Lat, coordenadas.Lng),
-				content: 'Tu ubicación (geolocation) usando HTML5 y Google Maps.'
-            });
+
 		}
 		
 		function errores (error) {
@@ -75,16 +63,41 @@
 		}
 		
 	}
+	function boton()
+	{
+		puntos.push(coordenadas.Lat);
+		puntos.push(coordenadas.Lng);
+		alert("las coordenadas son latitud = :" +coordenadas.Lat +" Longitud = "+coordenadas.Lng);
+	}
+	function boton2()
+	{
+		var txt = "";
+		for(var i = 0; i < puntos.length; i++)
+		{
+			txt += "<div class='tarea' id='activa'>";
+			txt += "<center style='color: white'>"+(puntos[i])+"</center>";
+			txt += "</div>";
+		}
+		nom_div("imprime").innerHTML = txt;
+	}
+	function nom_div(div)
+	{
+		return document.getElementById(div);
+	}
 	</script>
 </head>
 <body onload="iniciar()">
 	<header>
 		<h1>Posicionamiento con HTML 5 y Google Maps</h1>
 	</header>
+	<div></div>
 	<div id="informacion">
 		<h2>Tu posición actual es:</h2>
 		<h3>Latitud: <span id="latitude"></span></h3>
 		<h3>Longitud: <span id="longitude"></span></h3>
+		<input type="submit" value="Ver" name="ver" id="boton" onclick="boton()" />
+		<input type="submit" value="calcular area" name="calcular area" id="boton" onclick="boton2()" />
+		<div id = "imprime"></div>
 	</div>
 	<div id="mapa"></div>
 </body>
