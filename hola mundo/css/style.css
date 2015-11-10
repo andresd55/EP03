@@ -1,0 +1,25 @@
+body{
+		background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#ff0084', GradientType=1 );
+	background-repeat: no-repeat;
+		
+	}
+#div{
+	width: 50%;
+	background-color: green;
+	margin: 0 auto;
+	margin-bottom: 500px;
+	margin-top: 200px;
+	padding: 50px;
+	padding-left: 230px;
+	border-radius: 200px 14px 18px 200px;
+	border: 0px solid #000000;
+
+box-shadow: 15px 22px 19px 5px rgba(166,28,166,1);
+}
+.span{
+	background-color: yellow;
+	font: normal 40px "arial";
+	text-shadow: 1px 1px 1px rgb(255,0,0);
+	border: solid 2px white;
+}
